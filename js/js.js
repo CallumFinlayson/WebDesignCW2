@@ -19,13 +19,13 @@ function displayDiv(n) {
     }
     x[index-1].style.display = "block"; 
 }
-function modify_qty(val) {
-    var qty = document.getElementById('qty').value;
-    var new_qty = parseInt(qty,10) + val;
+function addToCart(x) {
+    var carttotal = document.getElementById('carttotal').value;
+    var new_carttotal = parseInt(carttotal,10) + x;
     
-    if (new_qty < 0) {
-        new_qty = 0;
+    if (new_carttotal < 0) {
+        new_carttotal = 0;
     }
-    document.getElementById('qty').value = new_qty;
-    return new_qty;
+    document.getElementById('carttotal').value = new_carttotal;
+    return new_carttotal;
 }
