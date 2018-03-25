@@ -13,6 +13,10 @@
 				<h2 id="pagetitle">home</h2>
 			</div>
 		</div>
+		<div class="cart">
+
+			<h3><input id="qty" value="0" disabled /> Item(s) in Cart</h3>
+		</div>
 	</header>
 	<nav>
 		<ul>
@@ -27,9 +31,40 @@
 	<div class="slideshow">
 		<img class="slide" src="images/driveway-gate.jpg">
 		<img class="slide" src="images/fence.jpg">
+		<div class="buttons">
 		<button class="btn display-left" onclick="iterateDiv(-1)">&#10094;</button>
 		<button class="btn display-right" onclick="iterateDiv(+1)">&#10095;</button>
+			
+		</div>
+		
 	</div>
+	<div class="card">
+		<div class="info">
+			<img src="images/fence.jpg">
+			<h1 class="item-title">1 Custom Gate</h1>
+			<p class="item-description">
+			All of our Aluminum or Wrought Iron Gates, or Fences are designed and manufactured to withstand a range of outdoor conditions. Our commitment to our customers and dedication to produce quality gates has earned us thousands of satisfied customers.
+			</p>
+			<h4>
+				$1000.00
+			</h4>
+		<button id="up" onclick="modify_qty(1)">Add to Cart</button>
+		</div>
+	</div>
+	<div class="card">
+		<div class="info">
+			<img src="images/fence.jpg">
+			<h1 class="item-title">1 Custom Fence</h1>
+			<p class="item-description">
+			All of our Aluminum or Wrought Iron Gates, or Fences are designed and manufactured to withstand a range of outdoor conditions. Our commitment to our customers and dedication to produce quality gates has earned us thousands of satisfied customers.
+			</p>
+			<h4>
+				$10000.00
+			</h4>
+        	<button id="up" onclick="modify_qty(1)">Add to Cart</button>
+		</div>
+	</div>
+</div>
 </body>
 <footer>
 	

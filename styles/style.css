@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+  font-family: 'Roboto100', sans-serif;
 }
 
 header {
@@ -83,7 +84,7 @@ div ul {
 
 .slideshow {
   position: relative;
-  width: 50%;
+  height: 20em;
 }
 
 .slideshow img {
@@ -91,10 +92,9 @@ div ul {
   height: auto;
 }
 
-.slideshow .btn {
-  position: absolute;
+.btn.display-left {
   top: 50%;
-  left: 50%;
+  left: 5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #555;
@@ -104,8 +104,86 @@ div ul {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  position: absolute;
+}
+.btn.display-right {
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
 }
 
 .slideshow .btn:hover {
   background-color: black;
+}
+
+.slideshow img:nth-child(1) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  max-width:100%;
+  max-height:100%;
+  object-fit: cover;
+}
+.slideshow img:nth-child(2) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  max-width:100%;
+  max-height:100%;
+  object-fit: cover;
+}
+
+.cart h3 {
+  margin: auto;
+  padding: 0.5em;
+  font-family: 'Roboto100', sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 1em;
+}
+
+.card {
+  position: relative;
+  height: 10em;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  margin: 5%;
+}
+
+.card img {
+  height: 100%;
+  width: auto;
+  float: left;
+}
+
+.info {
+  float: left;
+}
+
+.info p {
+  font-size: 0.5em;
+}
+
+.item-title {
+  margin: 0px;
+}
+
+input {
+  font-size: 1em;
+  background-color: transparent;
+  text-align: center;
+  border-width: 0;
+  margin: 0;
+  color: #fff;
+  width: 2%;
 }
